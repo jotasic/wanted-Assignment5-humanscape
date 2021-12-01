@@ -23,6 +23,7 @@
 
 
 ## 과제 내용
+
 <details>
   <summary><b>과제 내용 자세히 보기</b></summary>
 <div markdown="1">
