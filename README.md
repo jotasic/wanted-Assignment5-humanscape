@@ -6,6 +6,9 @@
     - [휴먼스케이프 사이트](https://humanscape.io/kr/index.html)
     - [wanted 채용공고 링크](https://www.wanted.co.kr/wd/41413)
 
+## 팀 Repository
+- https://github.com/Wanted-Preonboarding-Backend-1st-G5/Assignment5
+
 ## Members
 | 이름 | github                                     | 담당 기능                 |
 |-----|--------------------------------------------|-------------------------|
