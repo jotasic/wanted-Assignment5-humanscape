@@ -15,7 +15,14 @@
 |최신혁 |[shchoi94](https://github.com/shchoi94)     | batch task 로직 구현      |
 |박세원 |[sw-develop](https://github.com/sw-develop) | 검색 임상정보 조회 API      |
 
+## 과제 후기
+- https://velog.io/@burnkim61/프리온보딩-과제-5
+
 ## 과제 내용
+<details>
+  <summary><b>과제 내용 자세히 보기</b></summary>
+<div markdown="1">
+  
 ### **[필수 포함 사항]**
 
 - READ.ME 작성
@@ -90,7 +97,8 @@
        }
     
     ```
-
+  
+  </details>
 
 ## 사용 기술 및 tools
 > - Back-End :  <img src="https://img.shields.io/badge/Python 3.8-3776AB?style=for-the-badge&logo=Python&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/Django 3.2-092E20?style=for-the-badge&logo=Django&logoColor=white"/>&nbsp;<img src="https://img.shields.io/badge/sqlite-0064a5?style=for-the-badge&logo=sqlite&logoColor=white"/>&nbsp;
@@ -120,24 +128,7 @@
 [링크-Swagger](http://ec2-3-35-166-14.ap-northeast-2.compute.amazonaws.com:8000/swagger/)
 
 ## 구현 기능
-### 1. batch task   
-  - 과제 번호를 identifier로 가정히여   
-  open api의 리스폰스 기반으로 데이터베이스에 데이터 추가, 수정, 삭제 기능을 구현하였습니다.
-     
-  - 'eq', 'hash' 매직메소드를 직접 구현하지 않고 set이 사용가능한   
-    dataclass, 값 객체를 정의하였습니다.
-    ```
-    @dataclass(frozen=True)
-    class DataResearch:
-        name: str
-        number: str
-        period: str
-        ...
-    ```
-  - db 데이터와 open api 데이터를 각각 dataclass, 값 객체로 매핑 후, 데이터를 비교하여   
-    데이터를 데이터베이스에 추가, 수정, 삭제되도록 하였습니다.
-
-### 2. batch 자동화 기능 (django-crontab)
+### 1. batch 자동화 기능 (django-crontab) - 🙋‍♂️ 담당기능
 #### 기능 구현 방식
  - django-crontab을 이용해서 하루 단위로 batch task를 실행 할 수 있도록 하였습니다.
  ```python
@@ -174,6 +165,24 @@
    - 설정 방법은 `설치 및 실행 방법 - 배포용`을 참고해 주시기 바랍니다. 
    ![image](https://user-images.githubusercontent.com/8219812/142047477-984d31aa-be61-4fd7-a51e-0e08b4b1a1d1.png)
 
+  
+  
+### 2. batch task   
+  - 과제 번호를 identifier로 가정히여   
+  open api의 리스폰스 기반으로 데이터베이스에 데이터 추가, 수정, 삭제 기능을 구현하였습니다.
+     
+  - 'eq', 'hash' 매직메소드를 직접 구현하지 않고 set이 사용가능한   
+    dataclass, 값 객체를 정의하였습니다.
+    ```
+    @dataclass(frozen=True)
+    class DataResearch:
+        name: str
+        number: str
+        period: str
+        ...
+    ```
+  - db 데이터와 open api 데이터를 각각 dataclass, 값 객체로 매핑 후, 데이터를 비교하여   
+    데이터를 데이터베이스에 추가, 수정, 삭제되도록 하였습니다.
 
 
 ### 3. 특정 임상정보 조회 API
@@ -226,6 +235,11 @@
 
 
 ## 설치 및 실행 방법
+ 
+  <details>
+  <summary><b>설치 및 실행  자세히 보기</b></summary>
+<div markdown="1">
+  
 ###  Local 개발 및 테스트용
 
 1. 해당프로젝트를 clone 하고, 프로젝트 폴더로 들어간다.
@@ -310,7 +324,8 @@
     ```bash
     docker-compose -f docker-compose-deploy.yml up -d
     ```
-
+  </details>
+  
 ### 참고 임상정보 open API Key
 1. [임상정보 open API](https://www.data.go.kr/data/3074271/fileData.do#/API%20%EB%AA%A9%EB%A1%9D/GETuddi%3Acfc19dda-6f75-4c57-86a8-bb9c8b103887) 에서 활용 신청을 클릭해서 신청을 진행합니다.
 ![스크린샷 2021-11-17 오전 4 01 09](https://user-images.githubusercontent.com/8219812/142048791-3f609654-51aa-4606-8eaa-ac1e51476bd4.png)
@@ -385,14 +400,6 @@
  ┗ 📜 utils.py
 
 ```
-
-
-## TIL정리 (Blog)
-- 김태우 : https://velog.io/@burnkim61/프리온보딩-과제-5
-- 고유영 :
-- 박지원 : 
-- 최신혁 :
-- 박세원 :
 
 # Reference
 이 프로젝트는 원티드x위코드 백엔드 프리온보딩 과제 일환으로 휴먼스케이프에서 출제한 과제를 기반으로 만들었습니다.
