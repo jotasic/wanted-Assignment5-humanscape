@@ -6,6 +6,9 @@
     - [휴먼스케이프 사이트](https://humanscape.io/kr/index.html)
     - [wanted 채용공고 링크](https://www.wanted.co.kr/wd/41413)
 
+## 과제 후기
+- https://velog.io/@burnkim61/프리온보딩-과제-5
+
 ## 팀 Repository
 - https://github.com/Wanted-Preonboarding-Backend-1st-G5/Assignment5
 
@@ -18,8 +21,6 @@
 |최신혁 |[shchoi94](https://github.com/shchoi94)     | batch task 로직 구현      |
 |박세원 |[sw-develop](https://github.com/sw-develop) | 검색 임상정보 조회 API      |
 
-## 과제 후기
-- https://velog.io/@burnkim61/프리온보딩-과제-5
 
 ## 과제 내용
 <details>
